@@ -1,0 +1,12 @@
+<div class="full-page">
+
+  <ul class="list-inline text-center padded">
+    <% ["julianne", "guv"].each do |member| %>
+      <li>
+        <h3><%= member.capitalize %></h3>
+        <%= image_tag "#{member}.jpg", class: "img-circle" %>
+      </li>
+    <% end %>
+  </ul>
+
+</div>
