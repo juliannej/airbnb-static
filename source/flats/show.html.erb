@@ -8,9 +8,27 @@
   <div class="banner" style="background: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 50%), url('<%= image_path flat.flat_picture %>'); height: 50vh; background-position: center";>
   </div>
 
-<div class="container">
-  <%= image_tag flat.owner_picture, class: "img-circle" %>
-  <p><%= flat.owner_name %></p>
-  <h1><%= flat.description %></h1>
-  <p><%= flat.city %></p>
+<div class="container padded-xs">
+  <div class="row">
+    <div class="col-xs-12 col-md-8">
+      <div class="flat-header">
+
+          <div class="owner-information">
+            <%= image_tag flat.owner_picture, class: "img-circle" %>
+            <p><%= flat.owner_name %></p>
+          </div>
+
+          <div class="flat-description">
+            <h1><%= flat.description %></h1>
+            <p><%= flat.city %></p>
+          </div>
+
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4">
+      <p>hello world </p>
+    </div>
+
+  </div>
 </div>
